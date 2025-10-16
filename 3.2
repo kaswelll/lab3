@@ -1,0 +1,5 @@
+a=input('введите числа через пробел или запятую: ')
+st=a.replace(',',' ').split()
+n=list(map(int,st))
+s=sum(n)/len(n)
+print(s)
