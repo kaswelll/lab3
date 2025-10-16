@@ -1,0 +1,11 @@
+def emails(email):
+    if len(email)<5:
+        return 'нет'
+    a=email.find('@')
+    b=email.find('.')
+    if a!=-1 and b!=-1 and a<b:
+        return 'да'
+    return 'нет'
+email=input('введите email: ')
+r= emails (email)
+print (r)
